@@ -8,6 +8,9 @@ project(gtest_tutorial)
 # If you want to have a finer control of include path: use target_include_directories() inside tests
 #include_directories(src)  # let tests could find the header
 
+# Enable testing for project
+enable_testing()  # this should be placed ahead of add_subdirectory(tests)
+
 add_subdirectory(src)
 add_subdirectory(lib/googletest)
 add_subdirectory(tests)
